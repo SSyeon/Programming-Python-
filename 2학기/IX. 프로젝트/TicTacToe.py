@@ -5,7 +5,7 @@ class TicTacToe:
                       ".", ".", "."]
         self.current_turn = "X"
 
-    def set(self, row, col):
+    def set(self, row, col): #빈칸일 경우에만말을 놓을 수 잇도록!
         # if self.current_turn == "O":
         #     self.current_turn = "X"
         # else:
@@ -13,6 +13,8 @@ class TicTacToe:
         if self.get(row, col) == ".":
             self.current_turn = "X" if self.current_turn == "O" else "O"
             self.board[(row * 3) + col] = self.current_turn
+        else:
+            print("빈칸아닙니다;")
 
     def get(self, row, col):
         return self.board[(row * 3) + col]
