@@ -1,4 +1,4 @@
-# 유튜브 워크맨 이번달
+# 올리브영 순위지롱~~~
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
 import json
